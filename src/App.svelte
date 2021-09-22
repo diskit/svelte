@@ -1,8 +1,13 @@
 <script lang="ts">
+import { container } from 'tsyringe';
+
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
+  import { Counter as cc } from './lib/counter';
 
   console.log(import.meta.env.VITE_API_HOST);
+  const counter: cc = container.resolve(cc);
+  console.log(counter.count());
 </script>
 
 <main>
