@@ -1,12 +1,20 @@
 <script lang="ts">
-  let count: number = 0
+
+  import { container } from 'tsyringe';
+  import { Usecase, ViewState } from './counter';
+  
+  const usecase = container.resolve(Usecase);
+  const state = container.resolve<ViewState>("ViewState");
+
+  let count = state.count;
+  
   const increment = () => {
-    count += 1
+    usecase.increment();
   }
 </script>
 
 <button on:click={increment}>
-  Clicks: {count}
+  Clicks: {$count}
 </button>
 
 <style>
