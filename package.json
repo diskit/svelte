@@ -8,7 +8,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist && rimraf node_modules/.vite"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
