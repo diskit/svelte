@@ -11,11 +11,20 @@
   const increment = () => {
     usecase.increment();
   }
+
+  $: {
+    console.log($count);
+  }
+
+  $: description = `${$count} clicked`
+  
 </script>
 
 <button on:click={increment}>
   Clicks: {$count}
 </button>
+
+<div>{description}</div>
 
 <style>
   button {
