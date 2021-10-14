@@ -1,7 +1,9 @@
 <script lang="ts">
+import { Usecase } from '../../usecase/usecase';
 
-  import { container } from 'tsyringe';
-  import { Usecase, ViewState } from './counter';
+
+import { container } from 'tsyringe';
+import type { ViewState } from '../state';
   
   const usecase = container.resolve(Usecase);
   const state = container.resolve<ViewState>("ViewState");

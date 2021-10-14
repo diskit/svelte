@@ -3,7 +3,7 @@ import "reflect-metadata";
 import './global.scss';
 import './container';
 
-import App from './App.svelte'
+import App from './view/App.svelte'
 
 
 const app = new App({

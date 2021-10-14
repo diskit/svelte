@@ -1,5 +1,8 @@
 import { container } from "tsyringe";
-import { Gateway, Presenter, ViewState, Storage } from "./lib/counter";
+import { Gateway } from "./gateway/gateway";
+import { Presenter } from "./presenter/presenter";
+import { ViewState } from "./view/state";
+import { Storage } from './driver/storage';
 
 // register singleton
 container.register("ViewStateFactory", { useFactory: (_) => new ViewState()});
