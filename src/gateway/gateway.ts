@@ -1,5 +1,5 @@
-import { Count } from "../domain/domain";
-import type { InputPort } from "../usecase/port";
+import { Count } from "app/domain/domain";
+import type { InputPort } from "app/usecase/port";
 import { inject, singleton } from "tsyringe";
 
 

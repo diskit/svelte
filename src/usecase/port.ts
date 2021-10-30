@@ -1,4 +1,4 @@
-import type { Count } from "../domain/domain";
+import type { Count } from "app/domain/domain";
 
 export interface InputPort {
   find(): Count

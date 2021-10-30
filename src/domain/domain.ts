@@ -1,4 +1,3 @@
-
 export class Count {
   constructor(readonly value: number) {}
 

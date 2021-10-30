@@ -1,6 +1,6 @@
-import type { Count } from "../domain/domain";
-import type { OutputPort } from "../usecase/port";
-import { ViewState } from "../view/state";
+import type { Count } from "app/domain/domain";
+import type { OutputPort } from "app/usecase/port";
+import { ViewState } from "app/view/state";
 import { inject, singleton } from "tsyringe";
 
 @singleton()

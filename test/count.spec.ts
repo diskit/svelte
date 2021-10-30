@@ -1,4 +1,4 @@
-import { Count } from '../src/domain/domain';
+import { Count } from 'app/domain/domain';
 
 describe('count', () => {
   test('count up', () => {

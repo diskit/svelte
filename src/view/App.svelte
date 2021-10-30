@@ -1,7 +1,7 @@
 <script lang="ts">
 
   import logo from './assets/svelte.png'
-  import Counter from './component/Counter.svelte'  
+  import Counter from 'components/Counter.svelte'  
 
   console.log(import.meta.env.VITE_API_HOST);
   

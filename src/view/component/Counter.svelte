@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Usecase } from '../../usecase/usecase';
+import { Usecase } from 'app/usecase/usecase';
 
 
 import { container } from 'tsyringe';
