@@ -5,3 +5,4 @@ export class Count {
     return new Count(this.value + 1);
   }
 }
+

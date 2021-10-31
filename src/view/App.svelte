@@ -1,30 +1,8 @@
 <script lang="ts">
 
-  import logo from './assets/svelte.png'
-  import Counter from 'components/Counter.svelte'  
-
-  console.log(import.meta.env.VITE_API_HOST);
+import Task from './components/pages/TaskPage.svelte';
   
 </script>
 
-<main>
-  <div>
-    <img src={logo} alt="Svelte Logo" />
-  </div>
+<Task></Task>
 
-  <Counter />
-</main>
-
-<style lang="scss">
-
-  main {
-    text-align: center;
-    padding: 1em;
-    margin: 0 auto;
-  }
-
-  img {
-    height: 16rem;
-    width: 16rem;
-  }
-</style>

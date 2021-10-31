@@ -18,7 +18,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "app": path.resolve(__dirname, "src"),
-      "components": path.resolve(__dirname, "src/view/component")
+      "components": path.resolve(__dirname, "src/view/components")
     }
   }
 })
