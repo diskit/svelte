@@ -1,28 +1,26 @@
 <script lang="ts">
-import { Usecase } from 'app/usecase/usecase';
+  import { Usecase } from "app/usecase/usecase"
 
+  import { container } from "tsyringe"
+  import type { ViewState } from "../state"
 
-import { container } from 'tsyringe';
-import type { ViewState } from '../state';
-  
-  const usecase = container.resolve(Usecase);
-  const state = container.resolve<ViewState>("ViewState");
+  const usecase = container.resolve(Usecase)
+  const state = container.resolve<ViewState>("ViewState")
 
-  let count = state.count;
-  
+  let count = state.count
+
   const increment = () => {
-    usecase.increment();
+    usecase.increment()
   }
 
   $: {
-    console.log($count);
+    console.log($count)
   }
 
   $: description = `${$count} clicked`
-  
 </script>
 
-<button on:click={increment}>
+<button on:click="{increment}">
   Clicks: {$count}
 </button>
 

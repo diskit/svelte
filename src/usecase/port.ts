@@ -1,9 +1,9 @@
-import type { Count } from "app/domain/domain";
-import type { Tasks } from "app/domain/task";
+import type { Count } from "app/domain/domain"
+import type { Tasks } from "app/domain/task"
 
 export interface InputPort {
   find(): Count
-  store(count: Count) 
+  store(count: Count)
 }
 
 export interface OutputPort {

@@ -1,8 +1,7 @@
 <script lang="ts">
-import type { Task } from "app/view/state";
+  import type { Task } from "app/view/state"
 
-
-  export let task: Task;
+  export let task: Task
 </script>
 
 <div>{task.title}</div>
